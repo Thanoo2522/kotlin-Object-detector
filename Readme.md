@@ -1,6 +1,12 @@
 # CenixAI Object Detection (Android + Kotlin + ONNX Runtime)
-
 ตรวจจับวัตถุแบบเรียลไทม์ผ่านกล้อง โดยใช้ ONNX Runtime + CameraX + Jetpack Compose
+
+## download GitHub โค้ดที่ใช้ในการทดสอบนีี้
+https://github.com/Thanoo2522/kotlin-Object-detector/archive/refs/heads/master.zip
+
+## Lebel ที่ใช้ทดสอบ 
+"ไฟสีเขียว","ไฟสีแดง","ฝาสีแดง","ฝาสีเหลือง","ฝาสีดำ",กระดุม","bat 1.5v"
+
 
 ## สเปกที่ต้องใช้
 - Android Studio (RAM แนะนำ 16 GB, พื้นที่ว่าง 20-25 GB)
@@ -14,16 +20,8 @@
 2. **รันทดสอบ Hello Android** ก่อน ด้วย Emulator หรือมือถือจริง (เชื่อมต่อ USB + เปิด USB Debugging แล้วเช็คด้วย `adb devices`)
 
 ## ติดตั้งไฟล์โค้ด/โมเดล
-วางโครงสร้างไฟล์ตามนี้ใน `app/src/main/`:
 ```
-assets/models/<ชื่อโมเดล>/best.onnx, classes.json
-
-java/com/cenixai/AIObjectDetection/
-  MainActivity.kt
-  detector/  (Detection.kt, Detector.kt, Nms.kt, OnnxDetector.kt)
-  model/     (ModelManager.kt)
-  camera/    (IpCameraSource.kt)
-  ui/        (DetectionOverlay.kt)
+นำไฟล์ที่ได้จาก download github -> assets และ java  วางทับในโครงสร้าง 'app/src/main/'
 ```
 
 **Dependencies** (`app/build.gradle.kts`):
